@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiba Ahmed Ghosn - Interactive Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Book Cover -->
+    <div id="bookCover" class="book-cover">
+        <div class="book-cover-content">
+            <div class="book-spine"></div>
+            <div class="book-front">
+                <div class="cover-decoration"></div>
+                <h1 class="cover-title">Hiba Ahmed Ghosn</h1>
+                <p class="cover-subtitle">Educator & Writer</p>
+                <div class="cover-ornament">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <button class="open-book-btn" onclick="openBook()">
+                    <span>Open Book</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Book Container -->
+    <div id="bookContainer" class="book-container hidden">
+
+        <button class="close-book-btn" onclick="closeBook()">
+            <i class="fas fa-times"></i>
+        </button>
+
+        <div class="book">
+
+            <!-- PAGE 1 — ABOUT -->
+            <div class="page" id="page1" data-page="1">
+                <div class="page-content">
+                    <div class="page-number">1</div>
+
+                    <div class="profile-section">
+                       
+
+                        <h2 class="page-title">About Me</h2>
+                        <h3 class="profile-name">Hiba Ahmed Ghosn</h3>
+
+                        <p class="profile-description">
+                            A dedicated educator and writer with over 14 years of experience in shaping and inspiring young minds. Combining a rich academic background with a deep passion for literature, I strive to create meaningful learning experiences and contribute to the literary world through writing, mentoring, and translation.
+                        </p>
+
+                        <div class="profile-details">
+                            <div class="detail-item">
+                                <i class="fas fa-user"></i>
+                                <span>42 years old</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Lebanon</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-heart"></i>
+                                <span>Married with two kids</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>hibaghosn83@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAGE 2 — EXPERIENCE -->
+            <div class="page" id="page2" data-page="2">
+                <div class="page-content">
+                    <div class="page-number">2</div>
+                    <h2 class="page-title">Experience</h2>
+
+                    <div class="experience-timeline">
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">14 Years</div>
+                            <h3 class="timeline-title">Intermediate School Teacher</h3>
+                            <p class="timeline-company">Lycée Venus School</p>
+                            <p class="timeline-description">
+                                Taught various subjects at the intermediate level, focusing on engaging teaching methods and student-centered learning.
+                            </p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">—</div>
+                            <h3 class="timeline-title">Short Story Writer</h3>
+                            <p class="timeline-description">
+                                Published several short stories in Arabic and English on multiple reputable platforms and literary journals.
+                            </p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">—</div>
+                            <h3 class="timeline-title">Literature Judge</h3>
+                            <p class="timeline-description">
+                                Served as a judge for short stories, long stories, and articles in various literary competitions.
+                            </p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">—</div>
+                            <h3 class="timeline-title">Union & Association Member</h3>
+                            <p class="timeline-company">Arab Writers Union</p>
+                            <p class="timeline-description">
+                                Active member contributing to the development of Arab literary culture.
+                            </p>
+                            <p class="timeline-company">Lebanese Women’s Rights Association — Social Department (Former)</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAGE 3 — EDUCATION -->
+            <div class="page" id="page3" data-page="3">
+                <div class="page-content">
+
+                    <div class="page-number">3</div>
+                    <h2 class="page-title">Education</h2>
+
+                    <div class="education-list">
+
+                        <div class="education-item">
+                            <div class="education-icon"><i class="fas fa-university"></i></div>
+                            <div class="education-info">
+                                <h3 class="education-degree">Bachelor’s in Business Administration</h3>
+                                <p class="education-school">American University of Culture & Education (AUCE)</p>
+                            </div>
+                        </div>
+
+                        <div class="education-item">
+                            <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div class="education-info">
+                                <h3 class="education-degree">International Diploma in HR Management</h3>
+                                <p class="education-school">Cambridge University, Canada</p>
+                            </div>
+                        </div>
+
+                        <div class="education-item">
+                            <div class="education-icon"><i class="fas fa-laptop-code"></i></div>
+                            <div class="education-info">
+                                <h3 class="education-degree">TS1 — Computer Science & Accounting</h3>
+                                <p class="education-school">CIS Institute</p>
+                            </div>
+                        </div>
+
+                        <div class="education-item">
+                            <div class="education-icon"><i class="fas fa-book"></i></div>
+                            <div class="education-info">
+                                <h3 class="education-degree">Degree in English Literature</h3>
+                                <p class="education-school">AL Afak Institution</p>
+                            </div>
+                        </div>
+
+                        <div class="education-item">
+                            <div class="education-icon"><i class="fas fa-certificate"></i></div>
+                            <div class="education-info">
+                                <h3 class="education-degree">Pride Doctorate Certificate</h3>
+                                <p class="education-school">Arab Union Writers</p>
+                            </div>
+                        </div>
+
+                        <div class="education-item">
+                            <div class="education-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                            <div class="education-info">
+                                <h3 class="education-degree">Advanced Teacher Training</h3>
+                                <p class="education-description">Completed 120 hours in modern teaching techniques and handling learning obstacles.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAGE 4 — ACHIEVEMENTS -->
+            <div class="page" id="page4" data-page="4">
+                <div class="page-content">
+                    <div class="page-number">4</div>
+                    <h2 class="page-title">Achievements</h2>
+
+                    <div class="achievements-grid">
+
+                        <div class="achievement-card">
+                            <div class="achievement-icon"><i class="fas fa-newspaper"></i></div>
+                            <h3 class="achievement-title">Published Works</h3>
+                            <p class="achievement-description">
+                                Published stories in major platforms including “Al-Nahar Newspaper,” “The French Daily Newspaper,” and others.
+                            </p>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achievement-icon"><i class="fas fa-language"></i></div>
+                            <h3 class="achievement-title">Translator</h3>
+                            <p class="achievement-description">
+                                Translated numerous short stories and poems from various international writers.
+                            </p>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achievement-icon"><i class="fas fa-book-open"></i></div>
+                            <h3 class="achievement-title">Co-Author — “Rawaeh Al Qesas”</h3>
+                            <p class="achievement-description">
+                                Published a collaborative short story book with Arab writers from around the world.
+                            </p>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achievement-icon"><i class="fas fa-pen"></i></div>
+                            <h3 class="achievement-title">English Teaching Book (In Progress)</h3>
+                            <p class="achievement-description">
+                                Currently developing an English teaching book for new learners.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAGE 5 — SERVICES -->
+            <div class="page" id="page5" data-page="5">
+                <div class="page-content">
+                    <div class="page-number">5</div>
+                    <h2 class="page-title">Services Offered</h2>
+
+                    <div class="services-list">
+
+                        <div class="service-item">
+                            <div class="service-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                            <div class="service-content">
+                                <h3 class="service-title">Teaching & Tutoring</h3>
+                                <p class="service-description">
+                                    Personalized teaching for students, focusing on English learning, comprehension, and academic development.
+                                </p>
+                                <ul class="service-features">
+                                    <li>Modern learning techniques</li>
+                                    <li>Support for learning obstacles</li>
+                                    <li>Tailored teaching plans</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="service-item">
+                            <div class="service-icon"><i class="fas fa-pen-fancy"></i></div>
+                            <div class="service-content">
+                                <h3 class="service-title">Writing & Story Coaching</h3>
+                                <p class="service-description">
+                                    Helping aspiring writers improve storytelling, structure, and creative writing techniques.
+                                </p>
+                                <ul class="service-features">
+                                    <li>Story development guidance</li>
+                                    <li>Creative writing coaching</li>
+                                    <li>Editorial feedback</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="service-item">
+                            <div class="service-icon"><i class="fas fa-language"></i></div>
+                            <div class="service-content">
+                                <h3 class="service-title">Translation Services</h3>
+                                <p class="service-description">
+                                    Translation of short stories, poems, and literary works between Arabic and English.
+                                </p>
+                                <ul class="service-features">
+                                    <li>High-quality literary translations</li>
+                                    <li>Faithful tone & style preservation</li>
+                                    <li>Fast turnaround options</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAGE 6 — CONTACT -->
+            <div class="page" id="page6" data-page="6">
+                <div class="page-content">
+                    <div class="page-number">6</div>
+                    <h2 class="page-title">Get In Touch</h2>
+
+                    <div class="contact-section">
+                        <p class="contact-intro">
+                            Feel free to reach out for classes, writing services, collaborations, or general inquiries.
+                        </p>
+
+                        <!-- You will fill these manually -->
+                        <div class="contact-info">
+                            <div class="contact-item"><i class="fas fa-phone"></i><span>+961 3 716 610</span></div>
+                            <div class="contact-item"><i class="fas fa-envelope"></i><span>hibaghosn83@gmail.com</span></div>
+                            <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>Sidon, LEBANON</span></div>
+                        </div>
+
+                        <div class="whatsapp-form">
+                            <h3 class="form-title">Send a WhatsApp Message</h3>
+                            <form id="whatsappForm" onsubmit="sendWhatsApp(event)">
+                                <div class="form-group">
+                                    <label for="name"><i class="fas fa-user"></i>Your Name</label>
+                                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message"><i class="fas fa-comment"></i>Your Message</label>
+                                    <textarea id="message" name="message" required placeholder="Type your message..." rows="5"></textarea>
+                                </div>
+                                <button type="submit" class="whatsapp-btn">
+                                    <i class="fab fa-whatsapp"></i>Send via WhatsApp
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fas fa-globe"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="navigation-controls">
+            <button class="nav-btn prev-btn" onclick="previousPage()" id="prevBtn">
+                <i class="fas fa-chevron-left"></i><span>Previous</span>
+            </button>
+
+            <div class="page-indicator">
+                <span id="currentPageNum">1</span> / <span id="totalPages">6</span>
+            </div>
+
+            <button class="nav-btn next-btn" onclick="nextPage()" id="nextBtn">
+                <span>Next</span><i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
