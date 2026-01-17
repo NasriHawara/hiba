@@ -1,6 +1,6 @@
 // Book State Management
 let currentPage = 1;
-const totalPages = 6;
+const totalPages = 7;
 let isMobile = false;
 
 // Detect mobile device
@@ -26,7 +26,7 @@ function initializePages() {
             page.style.setProperty('--page-index', i);
             
             if (!isMobile) {
-                // Desktop: Set proper z-index for 3D stacking
+                // Desktop:  proper z-index for 3D stacking
                 page.style.zIndex = (totalPages + 1 - i).toString();
                 
                 // Only first page should show content initially
@@ -191,9 +191,8 @@ function sendWhatsApp(event) {
     // Encode the message for URL
     const encodedMessage = encodeURIComponent(whatsappMessage);
     
-    // Replace with actual WhatsApp number (format: country code + number, no spaces or special characters)
-    // Example: 15551234567 for US number +1 (555) 123-4567
-    const phoneNumber = '15551234567';
+
+    const phoneNumber = '9613716610';
     
     // Create WhatsApp URL
     const whatsappURL = `https://wa.me/${+9613716610}?text=${encodedMessage}`;
